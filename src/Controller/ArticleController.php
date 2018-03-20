@@ -21,4 +21,12 @@ class ArticleController
         return new Response('Har Har Mahadev');
     }
 
+    /**
+     * @Route("/news/{slug}")
+     */
+    public function show($slug){
+        return new Response(sprintf('Future page to show a article %s',$slug));
+
+    }
+
 }
